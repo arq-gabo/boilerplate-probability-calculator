@@ -32,7 +32,7 @@ def experiment(hat, expected_balls, num_balls_drawn, num_experiments):
     acum = 0
 
     for _ in range(num_experiments):
-        # We deeply copy the elements of the Ball class so as not to affect the elements of the original class
+        # We deeply copy the elements of the Hat class so as not to affect the elements of the original class
         copy_hat = copy.deepcopy(hat)
         # Apply method for get num random balls
         random_balls = copy_hat.draw(num_balls_drawn)
